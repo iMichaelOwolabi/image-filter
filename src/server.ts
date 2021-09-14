@@ -1,6 +1,9 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
+import { config } from 'dotenv';
+
+config();
 
 (async () => {
 
